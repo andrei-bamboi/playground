@@ -1,0 +1,40 @@
+
+base-chart-basic:
+  name: homeos-allure-service
+  imageOverride: homeos-allure-docker-service
+  version: 2.13.8
+  replicaCount: 1
+  #pullPolicy: Always
+  
+ # serviceMonitor:
+ #   enabled: true
+ #   interval: 5s
+ #   path: /management/prometheus
+  
+#  logging:
+#    level: INFO # supported log levels are: DEBUG, INFO, WARNING, ERROR, CRITICAL"
+#  
+# # allowConnectionsFrom:
+# #   - allure-test
+# #   - traefik.inbound
+#  
+# # allowConnectionsToPort: 5050
+#  
+#  securityContext:
+#    runAsUser: 1000
+#    runAsGroup: 1000
+#  
+#  strategyType: RollingUpdate
+#
+#base-chart-network:
+#  services:
+#    k8s-agent-allow-inbound-sla-cron-health:
+#      namespace: tools
+#      label:
+#        value: homeos-k8s-agent
+#      ports:
+#        - 8080
+#      allowConnectionsFrom:
+#        sla-cron-health:
+#          namespace: tools
+#

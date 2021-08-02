@@ -1,0 +1,14 @@
+apiVersion: v2
+name: homeos-allure-service
+description: Allure Framework provides for automation testing
+
+version: 0.0.1
+
+dependencies:
+  - name: base-chart-basic
+    version: 0.1.39
+    repository: http://helm-registry-service:8080/
+  - name: base-chart-network
+    version: 0.0.2
+    repository: http://helm-registry-service:8080/
+
